@@ -1,11 +1,6 @@
-/* .column-2 {
-  display: flex;
+@media screen and (max-width: 390px) {
+  .container {
+    width: 390px;
+    height: auto;
+  }
 }
-
-.box {
-  flex-direction: column;
-}
-
-.jar {
-  flex-direction: column;
-} */

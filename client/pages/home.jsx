@@ -15,7 +15,8 @@ const rowStyle = {
 };
 
 const boxStyle = {
-  justifyContent: 'flex-end'
+  justifyContent: 'flex-end',
+  align: 'center'
 };
 
 const basketStyle = {
@@ -27,7 +28,7 @@ export default function Home(props) {
       <div style={homeStyle} className="container">
         <div style={rowStyle} className="row">
           <div style={boxStyle} className="column-2 box">
-            <td>
+            <td align='center'>
               <Box />
               <td>
                 <button>Build a Box</button>
@@ -37,7 +38,7 @@ export default function Home(props) {
         </div>
         <div className="row">
           <div className="column-2 jar">
-            <td>
+            <td align='center'>
               <Jar />
               <td>
                 <button>Make a Jar</button>
@@ -47,7 +48,7 @@ export default function Home(props) {
         </div>
       <div style={rowStyle} className="row">
           <div style={basketStyle} className="column-2">
-            <td>
+          <td align='center'>
               <Basket />
               <td>
                 <button>Make a Basket</button>
@@ -57,7 +58,7 @@ export default function Home(props) {
         </div>
         <div className="row">
           <div className="column-2">
-            <td>
+          <td align='center'>
               <Backpack />
               <td>
                 <button>Make a Backpack</button>
