@@ -1,10 +1,17 @@
 import React from 'react';
-import HelloWorld from '../components/hello-world';
+import Box from '../components/box';
+import Jar from '../components/jar';
+import Basket from '../components/basket';
+import Backpack from '../components/backpack';
 
 export default function Home(props) {
   return (
-    <div>
-      <HelloWorld />
-    </div>
+      <div>
+        <Box />
+        <Jar />
+        <Basket />
+        <Backpack />
+
+      </div>
   );
 }
