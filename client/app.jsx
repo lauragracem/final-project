@@ -1,9 +1,11 @@
 import React from 'react';
-import Home from './pages/home';
+// import Home from './pages/home';
 import { parseRoute } from './lib';
-// import ContainerSubTypes from './pages/containersubtypes';
-// import Containers from './pages/containers';
-// import ContainerSubTypes from './pages/containerSubTypes';
+// import ContainerSubTypes from './pages/containerJars';
+import ContainerBoxes from './pages/containerBoxes';
+// import ContainerBaskets from './components/containerBaskets';
+// import ContainerBackpacks from './components/containerBackpacks';
+
 // import UploadContainerForm from '.pages/uploadcontainerform';
 // import UploadItemsForm from '.pages/uploaditemsform';
 // import UploadImages from '.pages/uploadimages';
@@ -24,6 +26,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    return <Home />;
+    return <ContainerBoxes />;
   }
 }

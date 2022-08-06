@@ -3,6 +3,7 @@ import Box from '../components/box';
 import Jar from '../components/jar';
 import Basket from '../components/basket';
 import Backpack from '../components/backpack';
+// import mediaScreen from '../components/mediaCss';
 
 const homeStyle = {
   display: 'flex',
@@ -17,10 +18,22 @@ const rowStyle = {
 const boxStyle = {
   justifyContent: 'flex-end',
   align: 'center'
+  // marginRight: '1rem',
+  // marginTop: '1rem'
+};
+
+const jarStyle = {
+  // marginLeft: '1.5rem'
 };
 
 const basketStyle = {
   justifyContent: 'flex-end'
+  // marginRight: '1.5rem'
+};
+
+const backpackStyle = {
+  // marginLeft: '1.5rem',
+  // marginTop: '-0.5rem'
 };
 
 export default function Home(props) {
@@ -31,13 +44,13 @@ export default function Home(props) {
             <td align='center'>
               <Box />
               <td>
-                <button>Build a Box</button>
+                <button onClick="">Build a Box</button>
               </td>
             </td>
           </div>
         </div>
         <div className="row">
-          <div className="column-2 jar">
+          <div style={jarStyle} className="column-2 jar">
             <td align='center'>
               <Jar />
               <td>
@@ -57,7 +70,7 @@ export default function Home(props) {
           </div>
         </div>
         <div className="row">
-          <div className="column-2">
+          <div style={backpackStyle} className="column-2">
           <td align='center'>
               <Backpack />
               <td>
