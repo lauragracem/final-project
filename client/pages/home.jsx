@@ -43,7 +43,7 @@ const Home = () => {
   // const { match, location, history } = this.props;
 
   return (
-      <div style={homeStyle} className="container col-12 col-md-6 col-lg-4">
+      <div style={homeStyle} className="container">
         <div style={rowStyle} className="row">
           <div style={boxStyle} className="column-2 box">
             <td align='center'>
