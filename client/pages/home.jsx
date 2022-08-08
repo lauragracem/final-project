@@ -59,7 +59,7 @@ const Home = () => {
             <td align='center'>
               <Jar />
               <td>
-                <button id="home-jar">Make a Jar</button>
+              <button onClick={() => navigate('/containerJars')}id="home-jar">Make a Jar</button>
               </td>
             </td>
           </div>
@@ -69,7 +69,7 @@ const Home = () => {
           <td align='center'>
               <Basket />
               <td>
-                <button id="home-basket">Make a Basket</button>
+              <button onClick={() => navigate('/containerBaskets')}id="home-basket">Make a Basket</button>
               </td>
             </td>
           </div>
@@ -79,7 +79,7 @@ const Home = () => {
           <td align='center'>
               <Backpack />
               <td>
-                <button id="home-backpack">Make a Backpack</button>
+              <button onClick={() => navigate('/containerBackpacks')}id="home-backpack">Make a Backpack</button>
               </td>
           </td>
         </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import Home from './pages/home';
-// import ContainerSubTypes from './pages/containerJars';
+import Jars from './pages/containerJars';
 import ContainerBoxes from './pages/containerBoxes';
-// import ContainerBaskets from './components/containerBaskets';
-// import ContainerBackpacks from './components/containerBackpacks';
+import ContainerBaskets from './components/containerBaskets';
+import ContainerBackpacks from './components/containerBackpacks';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
 // import UploadContainerForm from '.pages/uploadcontainerform';
@@ -23,6 +23,21 @@ export default function App() {
           exact
           path='/containerBoxes'
           element={<ContainerBoxes />}
+        />
+        <Route
+          exact
+          path='/containerJars'
+          element={<Jars />}
+        />
+        <Route
+          exact
+          path='/containerBaskets'
+          element={<ContainerBaskets />}
+        />
+        <Route
+          exact
+          path='/containerBackpacks'
+          element={<ContainerBackpacks />}
         />
       </Routes>
     </HashRouter>
