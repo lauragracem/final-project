@@ -4,27 +4,12 @@ import Jar from '../components/jar';
 import Basket from '../components/basket';
 import Backpack from '../components/backpack';
 import { useNavigate } from 'react-router-dom';
-// import mediaScreen from '../components/mediaCss';
-
-const homeStyle = {
-  display: 'flex',
-  flexDirection: 'column'
-};
-
-const rowStyle = {
-  display: 'flex',
-  justifyContent: 'flex-end'
-};
 
 const boxStyle = {
   justifyContent: 'flex-end',
   align: 'center',
   marginRight: '1rem',
   marginTop: '1rem'
-};
-
-const jarStyle = {
-  marginLeft: '1.5rem'
 };
 
 const basketStyle = {
@@ -40,11 +25,10 @@ const backpackStyle = {
 const Home = () => {
 
   const navigate = useNavigate();
-  // const { match, location, history } = this.props;
 
   return (
-      <div style={homeStyle} className="container">
-        <div style={rowStyle} className="row">
+      <div className="container">
+        <div className="row">
           <div style={boxStyle} className="column-2 box">
             <td align='center'>
               <Box />
@@ -55,8 +39,8 @@ const Home = () => {
           </div>
         </div>
         <div className="row">
-          <div style={jarStyle} className="column-2 jar">
-            <td align='center'>
+          <div className="column-2 jar">
+            <td>
               <Jar />
               <td>
               <button onClick={() => navigate('/containerJars')}id="home-jar">Make a Jar</button>
@@ -64,7 +48,7 @@ const Home = () => {
             </td>
           </div>
         </div>
-        <div style={rowStyle} className="row">
+        <div className="row">
           <div style={basketStyle} className="column-2">
           <td align='center'>
               <Basket />

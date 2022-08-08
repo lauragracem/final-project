@@ -1,16 +1,11 @@
 import React from 'react';
 
-const style = {
-  display: 'flex',
-  flexDirection: 'column',
-  align: 'center',
-  marginTop: '2rem'
-};
-
 export default function ContainerJars(props) {
-  return [
-    <img key="first" style={style} src="images/green-jar-1.png"></img>,
-    <img key="second" style={style} src="images/green-jar-2.png"></img>,
-    <img key="third" style={style} src="images/green-jar-3.png"></img>
-  ];
+  return (
+    <div style={{ height: '100vh' }} className="row d-flex justify-content-center align-items-center">
+      <img className="col-xs-3 p-4 mt-3" key="first" src="images/green-jar-1.png"></img>
+      <img className="col-xs-3 p-4 mt-3" key="second" src="images/green-jar-2.png"></img>
+      <img className="col-xs-3 p-4 mt-3" key="third" src="images/green-jar-3.png"></img>
+    </div>
+  );
 }
