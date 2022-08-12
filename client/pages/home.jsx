@@ -5,21 +5,17 @@ import Basket from '../components/basket';
 import Backpack from '../components/backpack';
 import { useNavigate } from 'react-router-dom';
 
-const basketStyle = {
-  marginRight: '2rem'
-};
-const boxStyle = {
-  marginRight: '2rem',
-  marginTop: '1rem'
-};
-
-const jar = {
-  marginLeft: '2rem'
-};
-
-const backpackStyle = {
-  marginLeft: '2rem',
-  marginTop: '-2rem'
+const styles = {
+  cursor: {
+    cursor: 'pointer'
+  },
+  container: {
+    height: '100vh',
+    width: '100vw',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
 };
 
 const Home = () => {
@@ -27,25 +23,27 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="container d-flex flex-column flex-md-row mt-md-5 justify-content-md-around">
-      <div className="row d-flex ml-auto ml-md-0">
-        <div className="column-2 box d-flex flex-column" style={boxStyle} onClick={() => navigate('/containerBoxes')}>
+    <div className="container" style={styles.container}>
+      <div className="row d-flex flex-xs-column flex-md-row">
+        <div className="col-xs-12 col-md-3 d-flex align-items-end justify-content-end justify-content-md-center">
+          <div className="mx-5" style={styles.cursor} onClick={() => navigate('/containerBoxes')}>
             <Box />
+          </div>
         </div>
-      </div>
-      <div className="row d-flex">
-        <div className="column-2 jar d-flex flex-column" style={jar} onClick={() => navigate('/containerJars')}>
-          <Jar />
+        <div className="col-xs-12 col-md-3 d-flex align-items-end justify-content-md-center">
+          <div className="mx-5" style={styles.cursor} onClick={() => navigate('/containerJars')}>
+            <Jar />
+          </div>
         </div>
-      </div>
-      <div className="row d-flex ml-auto ml-md-0">
-        <div className="column-2 basket d-flex flex-column" style={basketStyle} onClick={() => navigate('/containerBaskets')}>
+        <div className="col-xs-12 col-md-3 d-flex align-items-end justify-content-end justify-content-md-center">
+          <div className="mx-5" style={styles.cursor} onClick={() => navigate('/containerBaskets')}>
             <Basket />
           </div>
         </div>
-      <div className="row d-flex">
-        <div className="column-2 backpack d-flex flex-column" style={backpackStyle} onClick={() => navigate('/containerBackpacks')}>
+        <div className="col-xs-12 col-md-3 d-flex align-items-end justify-content-md-center">
+          <div className="mx-5" style={styles.cursor} onClick={() => navigate('/containerBackpacks')}>
             <Backpack />
+          </div>
         </div>
       </div>
     </div>
