@@ -6,19 +6,20 @@ import Backpack from '../components/backpack';
 import { useNavigate } from 'react-router-dom';
 
 const basketStyle = {
-  marginRight: '4rem'
+  marginRight: '2rem'
 };
 const boxStyle = {
-  marginRight: '4rem'
+  marginRight: '2rem',
+  marginTop: '1rem'
 };
 
 const jar = {
-  marginLeft: '4rem'
+  marginLeft: '2rem'
 };
 
 const backpackStyle = {
-  marginTop: '-2rem',
-  marginLeft: '4rem'
+  marginLeft: '2rem',
+  marginTop: '-2rem'
 };
 
 const Home = () => {
@@ -33,21 +34,18 @@ const Home = () => {
         </div>
       </div>
       <div className="row d-flex">
-        <div className="column-2 jar d-flex flex-column" style={jar}>
+        <div className="column-2 jar d-flex flex-column" style={jar} onClick={() => navigate('/containerJars')}>
           <Jar />
-          <button onClick={() => navigate('/containerJars')}id="home-jar">Make a Jar</button>
         </div>
       </div>
       <div className="row d-flex ml-auto ml-md-0">
-        <div className="column-2 basket d-flex flex-column" style={basketStyle}>
+        <div className="column-2 basket d-flex flex-column" style={basketStyle} onClick={() => navigate('/containerBaskets')}>
             <Basket />
-            <button onClick={() => navigate('/containerBaskets')}id="home-basket">Make a Basket</button>
           </div>
         </div>
       <div className="row d-flex">
-        <div className="column-2 backpack d-flex flex-column" style={backpackStyle}>
+        <div className="column-2 backpack d-flex flex-column" style={backpackStyle} onClick={() => navigate('/containerBackpacks')}>
             <Backpack />
-            <button onClick={() => navigate('/containerBackpacks')}id="home-backpack">Make a Backpack</button>
         </div>
       </div>
     </div>
