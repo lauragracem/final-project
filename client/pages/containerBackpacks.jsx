@@ -1,14 +1,12 @@
 import React from 'react';
 import ContainerBackpacks from '../components/containerBackpacks';
+import Colors from '../components/colorChoices';
 
 export default function ContainerSubTypesThree(props) {
   return (
-    <div className="container">
-      <div className="row">
-        <td>
-          <ContainerBackpacks />
-        </td>
-      </div>
+    <div style={{ height: '100vh' }} className="container d-flex flex-column justify-content-center align-items-center">
+      <Colors />
+      <ContainerBackpacks />
     </div>
   );
 }

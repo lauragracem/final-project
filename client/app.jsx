@@ -3,7 +3,7 @@ import Home from './pages/home';
 import Jars from './pages/containerJars';
 import ContainerBoxes from './pages/containerBoxes';
 import Baskets from './pages/containerBaskets';
-import ContainerBackpacks from './components/containerBackpacks';
+import ContainerBackpacks from './pages/containerBackpacks';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
 // import UploadContainerForm from '.pages/uploadcontainerform';
