@@ -4,10 +4,9 @@ import Colors from '../components/colorChoices';
 
 export default function containers(props) {
   return (
-    <div style={{ height: '100vh' }} className="container row d-flex flex-md-row justify-content-center align-items-center ml-0 mr-0 pl-0 pr-0">
+    <div style={{ height: '100vh', width: '100vw' }} className="container d-flex flex-column justify-content-center align-items-center">
       <Colors />
       <ContainerBoxes />
     </div>
   );
-
 }
