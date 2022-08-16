@@ -7,6 +7,7 @@ export default function Colors({ setColor }) {
       <img className="mx-4" src="images/BlueColorSquare.svg" onClick={() => setColor('blue')} />
       <img className="mx-4" src="images/YellowColorSquare.svg" onClick={() => setColor('yellow')} />
       <img className="mx-4" src="images/PeachColorSquare.svg" onClick={() => setColor('peach')} />
+      <img className="mx-4" src="images/GreenColorSquare.svg" onClick={() => setColor('green')} />
     </div>
   );
 }
