@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './pages/home';
 import Jars from './pages/containerJars';
 import ContainerBoxes from './pages/containerBoxes';
-import ContainerBaskets from './components/containerBaskets';
+import Baskets from './pages/containerBaskets';
 import ContainerBackpacks from './components/containerBackpacks';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
@@ -32,7 +32,7 @@ export default function App() {
         <Route
           exact
           path='/containerBaskets'
-          element={<ContainerBaskets />}
+          element={<Baskets />}
         />
         <Route
           exact
