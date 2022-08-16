@@ -1,6 +1,8 @@
 import React from 'react';
 import ContainerBoxes from '../components/containerBoxes';
 import BlueBox from '../components/blue-boxes';
+import YellowBox from '../components/yellow-boxes';
+import PeachBox from '../components/peach-boxes';
 import Colors from '../components/colorChoices';
 
 export default function containers(props) {
@@ -10,6 +12,8 @@ export default function containers(props) {
       <Colors />
       <ContainerBoxes />
       <BlueBox />
+      <YellowBox />
+      <PeachBox />
     </div>
   );
 }
