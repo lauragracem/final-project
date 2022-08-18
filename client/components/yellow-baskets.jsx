@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function YellowBaskets(props) {
   return (
-    <div>
-      <img src="images/yellowBaskets1.svg"></img>
-      <img src="images/yellowBaskets2.svg"></img>
+    <div className="row d-flex justify-content-center align-items-center mt-1">
+      <img className="col-xs-3 mb-0 mt-5 mr-md-5 mx-5 pb-5" src="images/yellowBasket1.svg"></img>
+      <img className="col-xs-3 mb-xs-5 ml-md-5 mx-5 pb-5" src="images/yellowBasket2.svg"></img>
     </div>
   );
 }
