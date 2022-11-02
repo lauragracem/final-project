@@ -5,10 +5,12 @@ import YellowBaskets from '../components/yellow-baskets';
 import PeachBaskets from '../components/peach-baskets';
 import Colors from '../components/colorChoices';
 import BackArrow from '../components/backArrow';
+import { useNavigate } from 'react-router-dom';
 
 export default function Baskets(props) {
 
   const [color, setColor] = useState('green');
+  const navigate = useNavigate();
 
   return (
     <div style={{ height: '100vh' }} className="container d-flex flex-column justify-content-center align-items-center my-1">
@@ -17,7 +19,9 @@ export default function Baskets(props) {
       {color === 'blue' && <BlueBaskets />}
       {color === 'yellow' && <YellowBaskets />}
       {color === 'peach' && <PeachBaskets />}
-      <BackArrow/>
+      <div onClick={() => navigate('/#')}>
+        <BackArrow />
+      </div>
     </div>
   );
 }
