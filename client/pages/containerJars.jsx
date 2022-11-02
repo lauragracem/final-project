@@ -4,6 +4,7 @@ import BlueJars from '../components/blue-jars';
 import YellowJars from '../components/yellow-jars';
 import PeachJars from '../components/peach-jars';
 import Colors from '../components/colorChoices';
+import BackArrow from '../components/backArrow';
 
 export default function Jars(props) {
 
@@ -16,6 +17,7 @@ export default function Jars(props) {
       {color === 'blue' && <BlueJars />}
       {color === 'yellow' && <YellowJars />}
       {color === 'peach' && <PeachJars />}
+      <BackArrow/>
     </div>
   );
 }
