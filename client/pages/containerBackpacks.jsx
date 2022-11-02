@@ -4,6 +4,7 @@ import BlueBackpacks from '../components/blue-backpacks';
 import YellowBackpacks from '../components/yellow-backpacks';
 import PeachBackpacks from '../components/peach-backpacks';
 import Colors from '../components/colorChoices';
+import BackArrow from '../components/backArrow';
 
 export default function ContainerSubTypesThree(props) {
 
@@ -16,6 +17,7 @@ export default function ContainerSubTypesThree(props) {
       {color === 'blue' && <BlueBackpacks />}
       {color === 'yellow' && <YellowBackpacks />}
       {color === 'peach' && <PeachBackpacks />}
+      <BackArrow/>
     </div>
   );
 }
