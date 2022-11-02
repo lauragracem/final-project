@@ -4,6 +4,7 @@ import BlueBox from '../components/blue-boxes';
 import YellowBox from '../components/yellow-boxes';
 import PeachBox from '../components/peach-boxes';
 import Colors from '../components/colorChoices';
+import BackArrow from '../components/backArrow';
 
 export default function Containers(props) {
 
@@ -16,6 +17,7 @@ export default function Containers(props) {
       {color === 'blue' && <BlueBox />}
       {color === 'yellow' && <YellowBox />}
       {color === 'peach' && <PeachBox />}
+      <BackArrow/>
     </div>
   );
 }
