@@ -4,6 +4,7 @@ import BlueBaskets from '../components/blue-baskets';
 import YellowBaskets from '../components/yellow-baskets';
 import PeachBaskets from '../components/peach-baskets';
 import Colors from '../components/colorChoices';
+import BackArrow from '../components/backArrow';
 
 export default function Baskets(props) {
 
@@ -16,6 +17,7 @@ export default function Baskets(props) {
       {color === 'blue' && <BlueBaskets />}
       {color === 'yellow' && <YellowBaskets />}
       {color === 'peach' && <PeachBaskets />}
+      <BackArrow/>
     </div>
   );
 }
